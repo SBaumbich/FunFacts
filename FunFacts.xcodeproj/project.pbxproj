@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D04FC701BB505BC00D07748 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04FC6F1BB505BC00D07748 /* FactBook.swift */; settings = {ASSET_TAGS = (); }; };
+		0D7E1F071BB57EA700B00B08 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7E1F061BB57EA700B00B08 /* ColorWheel.swift */; settings = {ASSET_TAGS = (); }; };
 		0DB905D71BB47F2100D37F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB905D61BB47F2100D37F4D /* AppDelegate.swift */; };
 		0DB905D91BB47F2100D37F4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB905D81BB47F2100D37F4D /* ViewController.swift */; };
 		0DB905DC1BB47F2100D37F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB905DA1BB47F2100D37F4D /* Main.storyboard */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D04FC6E1BB4836500D07748 /* ScratchPad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ScratchPad.playground; sourceTree = "<group>"; };
+		0D04FC6F1BB505BC00D07748 /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
+		0D7E1F061BB57EA700B00B08 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		0DB905D31BB47F2100D37F4D /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB905D61BB47F2100D37F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB905D81BB47F2100D37F4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,10 +79,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D04FC6D1BB482F500D07748 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				0D04FC6E1BB4836500D07748 /* ScratchPad.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
 		0DB905CA1BB47F2100D37F4D = {
 			isa = PBXGroup;
 			children = (
 				0DB905D51BB47F2100D37F4D /* FunFacts */,
+				0D04FC6D1BB482F500D07748 /* Playgrounds */,
 				0DB905EA1BB47F2100D37F4D /* FunFactsTests */,
 				0DB905F51BB47F2100D37F4D /* FunFactsUITests */,
 				0DB905D41BB47F2100D37F4D /* Products */,
@@ -98,11 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				0DB905D61BB47F2100D37F4D /* AppDelegate.swift */,
+				0D04FC6F1BB505BC00D07748 /* FactBook.swift */,
 				0DB905D81BB47F2100D37F4D /* ViewController.swift */,
 				0DB905DA1BB47F2100D37F4D /* Main.storyboard */,
 				0DB905DD1BB47F2100D37F4D /* Assets.xcassets */,
 				0DB905DF1BB47F2100D37F4D /* LaunchScreen.storyboard */,
 				0DB905E21BB47F2100D37F4D /* Info.plist */,
+				0D7E1F061BB57EA700B00B08 /* ColorWheel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -192,6 +208,7 @@
 				TargetAttributes = {
 					0DB905D21BB47F2100D37F4D = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AY3CUU53UL;
 					};
 					0DB905E61BB47F2100D37F4D = {
 						CreatedOnToolsVersion = 7.0;
@@ -255,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D04FC701BB505BC00D07748 /* FactBook.swift in Sources */,
 				0DB905D91BB47F2100D37F4D /* ViewController.swift in Sources */,
 				0DB905D71BB47F2100D37F4D /* AppDelegate.swift in Sources */,
+				0D7E1F071BB57EA700B00B08 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +415,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glazedmade.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -407,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.glazedmade.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -481,6 +506,7 @@
 				0DB905FD1BB47F2100D37F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DB905FE1BB47F2100D37F4D /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +515,7 @@
 				0DB906001BB47F2100D37F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DB906011BB47F2100D37F4D /* Build configuration list for PBXNativeTarget "FunFactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +524,7 @@
 				0DB906031BB47F2100D37F4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
