@@ -9,4 +9,4 @@ FunFacts Is an app with a single view controller that generates a random Snapple
 * UINavigationController
 
 ##Why is this project meaningful to my career?
-This prodject was essential for learning the basics of both Xcode IDE and Swift.
+This project was essential for learning the basics of both Xcode IDE and Swift.
